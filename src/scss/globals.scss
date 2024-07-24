@@ -1,0 +1,23 @@
+@import './variables';
+
+:root {
+  --plum-shadow: rgba(46, 0, 62, 0.7);
+  --background-color: #2E003E; /* Dark Plum */
+  --dark-plum: #3F1B58;
+  --plum: #4A2066;
+  --light-plum: #6C3E82;
+  --dark-mauve: #9375A1;
+  --mauve: #C6B2D4;
+  --light-mauve: #E3D1EA;
+  --theme-color: #00AFFF; /* Electric Blue */
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

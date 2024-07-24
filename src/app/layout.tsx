@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import '@/scss/globals.css';
-import '@/scss/index.scss'
+import { Roboto_Mono, Raleway } from "next/font/google";
+import "@/scss/globals.scss";
+import "@/scss/index.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Meet Tahzeeb",
-  description: "Tahzeeb's portfolio",
+	title: "Meet Tahzeeb",
+	description: "Tahzeeb's portfolio",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={robotoMono.className}>{children}</body>
+		</html>
+	);
 }
