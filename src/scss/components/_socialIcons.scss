@@ -1,0 +1,41 @@
+.social-icons {
+	position: fixed;
+	bottom: 0;
+	left: 4rem;
+	&-list {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		&-item {
+			font-size: var(--tlarge2);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.3s ease-in-out;
+			&-link {
+				padding: 10px;
+				color: var(--light-mauve);
+				transition: 0.3s ease-in-out;
+        &:hover {
+          color: var(--theme-color);
+        }
+        &:focus {
+          transform: translateY(-4px);
+          color: var(--theme-color);
+        }
+			}
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+		}
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 120px;
+      background-color: var(--light-mauve);
+      margin: 0px auto;
+    }
+	}
+}
