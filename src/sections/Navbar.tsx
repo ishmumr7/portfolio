@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import Logo from '@/components/Logo'
 import Link from 'next/link'
 import React from 'react'
@@ -31,6 +32,9 @@ const Navbar = () => {
               ))
             }
           </ul>
+          <div className="nav-items-button">
+            <Button text="Resume" link="http://localhost:3000/Resume.pdf" />
+          </div>
         </div>
       </div>
     </nav>
