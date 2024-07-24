@@ -3,7 +3,7 @@ import React from "react";
 
 const Button = ({ text, link }: { text: string; link: string }) => {
 	return (
-		<Link href={link} className="btn">
+		<Link href={link} target="_blank" className="btn">
 			{text}
 		</Link>
 	);
