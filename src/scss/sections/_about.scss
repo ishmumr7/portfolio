@@ -9,6 +9,7 @@
       font-size: var(--tx2large);
       font-weight: 700&;
       &::before {
+        font-family: var(--roboto-mono);
         counter-increment: title;
         content: "0" counter(title) ".";
         margin-right: 0.5rem;
