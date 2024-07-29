@@ -3,9 +3,9 @@
 :root {
   --plum-shadow: rgba(46, 0, 62, 0.7);
   --background-color: #1A0027; /* Dark Plum */
-  --dark-plum: #3F1B58;
-  --plum: #4A2066;
-  --light-plum: #6C3E82;
+  --dark-plum: #2B0F3F;
+  --plum: #37134E;
+  --light-plum: #4E2870;
   --dark-mauve: #9375A1;
   --mauve: #C6B2D4;
   --light-mauve: #E3D1EA;
@@ -15,6 +15,10 @@
 body {
   background-color: var(--background-color);
   counter-reset: title;
+}
+
+body, html {
+  scroll-behavior: smooth;
 }
 
 * {
