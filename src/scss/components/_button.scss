@@ -5,10 +5,10 @@
   background-color: transparent;
   border: 1px solid var(--theme-color);
   border-radius: 4px;
-  font-size: var(--tsm);
+  font-size: var(--tsm2);
   outline: none;
   &:hover, &:focus {
-    background-color: var(--plum);
+    background-color: var(--primary-dark);
   }
   transition: 0.3s ease-in-out;
 }
