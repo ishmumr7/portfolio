@@ -22,7 +22,7 @@
         width: 300px;
         height: 2px;
         margin-left: 380px;
-        background-color: var(--light-plum);
+        background-color: var(--primary-light);
       }
     }
   }
@@ -79,7 +79,7 @@
         }
         &-title {
           width: max-content;
-          color: var(--light-mauve);
+          color: var(--text-light);
           font-size: var(--txlarge);
           font-family: var(--raleway);
           cursor: pointer;
@@ -89,10 +89,10 @@
           }
         }
         &-description {
-          background-color: var(--plum);
+          background-color: var(--primary);
           border-radius: 0.2rem;
           p {
-            color: var(--mauve);
+            color: var(--text);
             font-family: var(--raleway);
             padding: 2rem;
             text-align: end;
@@ -104,7 +104,7 @@
           gap: 1rem;
           flex-wrap: wrap;
           &-item {
-            color: var(--mauve);
+            color: var(--text);
             font-family: var(--roboto-mono);
           }
         }
@@ -120,7 +120,7 @@
             align-items: center;
             &-link {
               padding: 10px;
-              color: var(--light-mauve);
+              color: var(--primary-light);
               transition: 0.3s ease-in-out;
               outline: 2px dashed transparent;
               &:hover {
