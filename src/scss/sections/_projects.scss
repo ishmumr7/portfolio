@@ -13,6 +13,7 @@
         content: "0" counter(title) ".";
         margin-right: 0.5rem;
         color: var(--theme-color);
+        font-family: var(--roboto-mono);
       }
       &::after {
         content: "";
