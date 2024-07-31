@@ -13,7 +13,7 @@ const Projects = () => {
 			technologies: [
 				"React",
 				"Redux Toolkit",
-				"TailwindCSS",
+				"Tailwind",
 				"Node.js",
 				"MongoDB",
 				"Socket.IO",
