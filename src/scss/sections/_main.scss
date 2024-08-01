@@ -1,6 +1,9 @@
 main {
-	margin: 0 23rem;
-	@media screen and (max-width: 1020px) {
+	margin: 0 20rem;
+	@media screen and (max-width: 1280px) {
+		margin: 0 12rem;
+	}
+	@media screen and (max-width: 1080px) {
 		margin: 0 8rem;
 	}
 	@media screen and (max-width: 768px) {
