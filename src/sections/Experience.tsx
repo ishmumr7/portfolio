@@ -66,7 +66,6 @@ const Experience = () => {
 					<div className="exp-details-position">
 						<div className="exp-details-position-container">
 							<h3>{experiences[selected].role}</h3>
-							<span>at</span>
 							<h3 className="exp-details-position-container-company">
 								<Link href={experiences[selected].url} className="link">
 									{experiences[selected].name}
