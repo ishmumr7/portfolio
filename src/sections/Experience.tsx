@@ -74,7 +74,13 @@ const Experience = () => {
 						</li>
 					))}
 				</ul>
-				<div className="exp-details">
+				<motion.div
+					className="exp-details"
+					key={selected}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.6 }}
+				>
 					<div className="exp-details-position">
 						<div className="exp-details-position-container">
 							<h3>{experiences[selected].role}</h3>
@@ -95,7 +101,7 @@ const Experience = () => {
 							</li>
 						))}
 					</ul>
-				</div>
+				</motion.div>
 			</div>
 		</motion.div>
 	);
