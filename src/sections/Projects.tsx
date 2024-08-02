@@ -7,7 +7,7 @@ const Projects = () => {
 	const projects = [
 		{
 			image: "/campus-closet.png",
-			name: "Campus Closet - UTM's Student Marketplace",
+			name: "Campus Closet",
 			description:
 				"A web based marketplace for the students of Universiti Teknologi Malaysia. The main goal of this project is to make a website where UTM students and employees can buy and sell things.",
 			technologies: [
