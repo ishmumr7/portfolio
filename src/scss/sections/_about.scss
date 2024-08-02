@@ -1,5 +1,6 @@
 .about {
-	margin: 15rem 0;
+	margin: 10rem 0;
+	padding-top: 10rem;
 	.title {
 		font-family: var(--raleway);
 		color: var(--light-mauve);
@@ -149,41 +150,41 @@
 					height: 400px;
 					width: 300px;
 				}
-        &-container {
-          height: 400px;
-          width: 300px;
-        }
+				&-container {
+					height: 400px;
+					width: 300px;
+				}
 			}
-      &-info {
-        &-text {
-          margin-right: 0;
-        }
-      }
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+			&-info {
+				&-text {
+					margin-right: 0;
+				}
+			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
 	}
-  @media screen and (max-width: 480px) {
-    .title {
-      h2 {
-        &::after {
-          width: 100px;
-        }
-      }
-    }
-    &-grid {
-      &-photo {
-        .overlay {
-          height: 297px;
-          width: 223px;
-        }
-        &-container {
-          height: 297px;
-          width: 223px;
-        }
-      }
-    }
-  }
+	@media screen and (max-width: 480px) {
+		.title {
+			h2 {
+				&::after {
+					width: 100px;
+				}
+			}
+		}
+		&-grid {
+			&-photo {
+				.overlay {
+					height: 297px;
+					width: 223px;
+				}
+				&-container {
+					height: 297px;
+					width: 223px;
+				}
+			}
+		}
+	}
 }
