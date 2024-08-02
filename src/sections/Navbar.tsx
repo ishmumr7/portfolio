@@ -6,6 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
 	const sectionLinks = [
@@ -54,12 +55,28 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className={`wrapper ${visible && "blur-nav"}`}>
-				<div className="brand">
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						duration: 0.3,
+						ease: "easeInOut",
+					}}
+					className="brand"
+				>
 					<Link href="/">
 						<Logo />
 					</Link>
-				</div>
-				<div className="nav-responsive-toggle">
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						duration: 0.3,
+						ease: "easeInOut",
+					}}
+					className="nav-responsive-toggle"
+				>
 					{responsiveVisible ? (
 						<CgClose
 							onClick={(e) => {
@@ -75,20 +92,37 @@ const Navbar = () => {
 							}}
 						/>
 					)}
-				</div>
+				</motion.div>
 				<div className={`${responsiveVisible && "nav-responsive"} nav-items`}>
 					<ul className="nav-items-list">
 						{sectionLinks.map((item, index) => (
-							<li key={index} className="nav-items-list-item">
+							<motion.li
+								key={index}
+								className="nav-items-list-item"
+								initial={{ opacity: 0, y: -25 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{
+									duration: 0.3,
+									ease: "easeInOut",
+									delay: 0.3 + index * 0.1,
+								}}
+							>
 								<Link href={item.link} className="nav-items-list-item-link">
 									{item.name}
 								</Link>
-							</li>
+							</motion.li>
 						))}
 					</ul>
-					<div className="nav-items-button">
+					<motion.div className="nav-items-button"
+					initial={{ opacity: 0, y: -25 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 0.3,
+						ease: "easeInOut",
+						delay: 0.6,
+					}}>
 						<Button text="Resume" link="http://localhost:3000/Resume.pdf" />
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</nav>
