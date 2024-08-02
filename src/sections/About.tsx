@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
 	const skillsList = [
@@ -39,7 +42,18 @@ const About = () => {
 	];
 
 	return (
-		<div className="about" id="about">
+		<motion.div
+			className="about"
+			id="about"
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true }}
+			transition={{ duration: 0.8 }}
+			variants={{
+				visible: { opacity: 1, y: -50 },
+				hidden: { opacity: 0, y: 0 },
+			}}
+		>
 			<div className="title">
 				<h2>About Me</h2>
 			</div>
@@ -72,26 +86,22 @@ const About = () => {
 						Technologies I&apos;ve been working on recently:
 					</div>
 					<ul className="about-grid-info-list">
-						{
-							skillsList.map(({name, progress}) => (
-								<li key={name} className="about-grid-info-list-item">{name}</li>
-							))
-						}
+						{skillsList.map(({ name, progress }) => (
+							<li key={name} className="about-grid-info-list-item">
+								{name}
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className="about-grid-photo">
-					<div className="overlay">
-
-					</div>
-					<div className="overlay-border">
-
-					</div>
+					<div className="overlay"></div>
+					<div className="overlay-border"></div>
 					<div className="about-grid-photo-container">
-						<Image src="/tahzeeb.jpg" alt="Display Picture" fill/>
+						<Image src="/tahzeeb.jpg" alt="Display Picture" fill />
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

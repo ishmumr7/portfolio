@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Projects = () => {
 	const projects = [
@@ -26,7 +29,18 @@ const Projects = () => {
 	];
 
 	return (
-		<div className="projects" id="work">
+		<motion.div
+			className="projects"
+			id="work"
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true }}
+			transition={{ duration: 0.8 }}
+			variants={{
+				visible: { opacity: 1, y: -50 },
+				hidden: { opacity: 0, y: 0 },
+			}}
+		>
 			<div className="title">
 				<h2>Some of My Projects</h2>
 			</div>
@@ -36,7 +50,12 @@ const Projects = () => {
 						<div className="project-image">
 							<div className="project-image-overlay"></div>
 							<div className="project-image-container">
-								<Image src={project.image} alt={project.name} fill quality={100} />
+								<Image
+									src={project.image}
+									alt={project.name}
+									fill
+									quality={100}
+								/>
 							</div>
 						</div>
 						<div className="project-info">
@@ -62,7 +81,7 @@ const Projects = () => {
 										<FiGithub />
 									</Link>
 								</li>
-                <li className="project-info-links-item">
+								<li className="project-info-links-item">
 									<Link
 										href={project.externalLinks.live}
 										className="project-info-links-item-link"
@@ -76,7 +95,7 @@ const Projects = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

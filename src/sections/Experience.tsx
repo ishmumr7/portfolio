@@ -1,17 +1,18 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
 	const [selected, setSelected] = useState(0);
 
-  useEffect(() => {
-    const transformSelected = () => {
-      const underline = document.querySelector<HTMLElement>(".underline");
-      underline!.style.top = `${selected * 2.5}rem`;
-    };
-    transformSelected();
-  }, [selected])
+	useEffect(() => {
+		const transformSelected = () => {
+			const underline = document.querySelector<HTMLElement>(".underline");
+			underline!.style.top = `${selected * 2.5}rem`;
+		};
+		transformSelected();
+	}, [selected]);
 
 	const experiences = [
 		{
@@ -26,7 +27,7 @@ const Experience = () => {
 				"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
 			],
 		},
-    //One more test experience
+		//One more test experience
 		{
 			name: "ABC Systems Ltd.",
 			role: "Full-Stack Developer Intern",
@@ -42,7 +43,18 @@ const Experience = () => {
 	];
 
 	return (
-		<div className="experience" id="experience">
+		<motion.div
+			className="experience"
+			id="experience"
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true }}
+			transition={{ duration: 0.8 }}
+			variants={{
+				visible: { opacity: 1, y: -50 },
+				hidden: { opacity: 0, y: 0 },
+			}}
+		>
 			<div className="title">
 				<h2>Where I&apos;ve Worked</h2>
 			</div>
@@ -85,7 +97,7 @@ const Experience = () => {
 					</ul>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
