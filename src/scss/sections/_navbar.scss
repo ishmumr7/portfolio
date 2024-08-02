@@ -43,11 +43,11 @@ nav {
 			display: flex;
 			gap: 3rem;
 			color: var(--light-mauve);
-			font-size: var(--tsm1);
+			font-size: var(--tsm2);
 			counter-reset: nav-list;
 			&-list {
 				display: flex;
-				gap: 3rem;
+				gap: 2rem;
 				list-style-type: none;
 				&-item {
 					a {
