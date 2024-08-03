@@ -115,4 +115,7 @@ nav {
 		box-shadow: 0 10px 30px -10px var(--plum-shadow);
 		backdrop-filter: blur(10px);
 	}
+	.no-shadow {
+    box-shadow: none;
+  }
 }
