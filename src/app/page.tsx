@@ -25,7 +25,7 @@ export default function Home() {
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			{showContent && (
+			{showContent ? (
 				<>
 					<Navbar />
 					<Socials />
@@ -38,8 +38,8 @@ export default function Home() {
 						<Contact />
 					</main>
 				</>
-			)}
-			<Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
+			) : <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />}
+			
 		</div>
 	);
 }
