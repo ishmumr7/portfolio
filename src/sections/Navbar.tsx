@@ -59,8 +59,10 @@ const Navbar = () => {
     const main = document.querySelector("main");
     if (responsiveVisible) {
       main?.classList.add("blur");
+      document.body.style.overflow = "hidden"; // Disable scroll
     } else {
       main?.classList.remove("blur");
+      document.body.style.overflow = "auto"; // Enable scroll
     }
   }, [responsiveVisible]);
 
