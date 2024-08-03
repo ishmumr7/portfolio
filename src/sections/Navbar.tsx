@@ -69,10 +69,10 @@ const Navbar = () => {
   return (
     <nav>
       <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={`wrapper ${visible && window.scrollY > 0 ? "blur-nav" : ""}`}
+        initial={{ y: 0, opacity: 1 }} // Initial position and opacity of the navbar
+        animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }} // Animate y position and opacity based on `visible` state
+        transition={{ duration: 0.3, ease: "easeInOut" }} // Animation duration and easing
+        className={`wrapper ${window.scrollY > 0 ? "blur-nav" : ""}`}
       >
         <motion.div
           initial={{ opacity: 0 }}
