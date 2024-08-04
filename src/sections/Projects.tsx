@@ -19,7 +19,26 @@ const Projects = () => {
 				"Tailwind",
 				"Node.js",
 				"MongoDB",
+				"Stripe",
 				"Socket.IO",
+			],
+			externalLinks: {
+				live: "https://github.com/ishmumr7/campus-closet",
+				github: "https://github.com/ishmumr7/campus-closet",
+			},
+		},
+		{
+			image: "/jom-tapau.png",
+			name: "Jom Tapau",
+			description:
+				"Jom Tapau is a pre-order food delivery platform based on a cafeteria in the UTM campus. Its vision is to help university students and working adults afford cheaper food delivery meals and services",
+			technologies: [
+				"React",
+				"Bootstrap",
+				"Node.js",
+				"MongoDB",
+				"Firebase",
+				"Stripe",
 			],
 			externalLinks: {
 				live: "https://github.com/ishmumr7/campus-closet",
