@@ -56,8 +56,8 @@ const Projects = () => {
 			viewport={{ once: true }}
 			transition={{ duration: 0.8 }}
 			variants={{
-				visible: { opacity: 1, y: -50 },
-				hidden: { opacity: 0, y: 0 },
+				visible: { opacity: 1, y: 0 },
+				hidden: { opacity: 0, y: 50 },
 			}}
 		>
 			<div className="title">
@@ -65,7 +65,18 @@ const Projects = () => {
 			</div>
 			<div className="projects-container">
 				{projects.map((project, index) => (
-					<div className="project" key={index}>
+					<motion.div
+						className="project"
+						key={index}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						transition={{ duration: 0.8 }}
+						variants={{
+							visible: { opacity: 1, y: 0 },
+							hidden: { opacity: 0, y: 50 },
+						}}
+					>
 						<div className="project-image">
 							<div className="project-image-overlay"></div>
 							<div className="project-image-container">
@@ -111,7 +122,7 @@ const Projects = () => {
 								</li>
 							</ul>
 						</div>
-					</div>
+					</motion.div>
 				))}
 			</div>
 		</motion.div>
