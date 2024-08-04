@@ -10,6 +10,7 @@ import Contact from "@/sections/Contact";
 import Head from "next/head";
 import { useState } from "react";
 import Loader from "@/components/Loader";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,7 @@ export default function Home() {
 						<Projects />
 						<Contact />
 					</main>
+					<Footer />
 				</>
 			) : <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />}
 			
