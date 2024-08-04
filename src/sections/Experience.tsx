@@ -27,19 +27,19 @@ const Experience = () => {
 				"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
 			],
 		},
-		//One more test experience
-		{
-			name: "ABC Systems Ltd.",
-			role: "Full-Stack Developer Intern",
-			url: "https://www.genuitysystems.com/",
-			start: "September 2023",
-			end: "February 2024",
-			description: [
-				"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fugiat, molestias commodi libero nostrum quidem nobis eligendi sapiente in quia similique ducimus quod quo sunt consequatur praesentium sit sequi architecto.",
-				"Software Documentation: Created comprehensive user manuals, API documentation, and technical guides. Ensured accuracy and accessibility for both technical and non-technical users.",
-				"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
-			],
-		},
+		// //One more test experience
+		// {
+		// 	name: "ABC Systems Ltd.",
+		// 	role: "Full-Stack Developer Intern",
+		// 	url: "https://www.genuitysystems.com/",
+		// 	start: "September 2023",
+		// 	end: "February 2024",
+		// 	description: [
+		// 		"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fugiat, molestias commodi libero nostrum quidem nobis eligendi sapiente in quia similique ducimus quod quo sunt consequatur praesentium sit sequi architecto.",
+		// 		"Software Documentation: Created comprehensive user manuals, API documentation, and technical guides. Ensured accuracy and accessibility for both technical and non-technical users.",
+		// 		"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
+		// 	],
+		// },
 	];
 
 	return (
