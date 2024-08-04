@@ -41,8 +41,8 @@ const Projects = () => {
 				"Stripe",
 			],
 			externalLinks: {
-				live: "https://github.com/ishmumr7/campus-closet",
-				github: "https://github.com/ishmumr7/campus-closet",
+				live: "https://spiffy-raindrop-bb2a07.netlify.app/",
+				github: "https://github.com/Jom-Tapau",
 			},
 		},
 	];
