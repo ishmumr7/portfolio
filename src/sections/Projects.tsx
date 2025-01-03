@@ -9,13 +9,23 @@ import { motion } from "framer-motion";
 const Projects = () => {
 	const projects = [
 		{
+			image: "/jawahir.png",
+			name: "Jawahir-Al-Riyadh Educational Company",
+			description:
+				"A landing page for Jawahir-Al-Riyadh Educational Company, showcasing their school and educational services.",
+			technologies: ["NextJS", "NextUI", "Tailwind"],
+			externalLinks: {
+				live: "https://jawahir-school.netlify.app/",
+			},
+		},
+		{
 			image: "/campus-closet.png",
 			name: "Campus Closet",
 			description:
 				"A web based marketplace for the students of Universiti Teknologi Malaysia. The main goal of this project is to make a website where UTM students and employees can buy and sell things.",
 			technologies: [
 				"React",
-				"Redux Toolkit",
+				"Redux",
 				"Tailwind",
 				"Node.js",
 				"MongoDB",
@@ -102,15 +112,17 @@ const Projects = () => {
 								))}
 							</ul>
 							<ul className="project-info-links">
-								<li className="project-info-links-item">
-									<Link
-										href={project.externalLinks.github}
-										className="project-info-links-item-link"
-										target="_blank"
-									>
-										<FiGithub />
-									</Link>
-								</li>
+								{project.externalLinks.github && (
+									<li className="project-info-links-item">
+										<Link
+											href={project.externalLinks.github}
+											className="project-info-links-item-link"
+											target="_blank"
+										>
+											<FiGithub />
+										</Link>
+									</li>
+								)}
 								<li className="project-info-links-item">
 									<Link
 										href={project.externalLinks.live}
