@@ -16,6 +16,18 @@ const Experience = () => {
 
 	const experiences = [
 		{
+			name: "Advanced Robotics Systems",
+			role: "Co-founder & Lead Software Engineer",
+			url: "https://www.linkedin.com/company/advanced-robotics-systems/",
+			start: "March 2024",
+			end: "Present",
+			description: [
+				"Project Management: Leading software development projects, ensuring timely delivery and adherence to quality standards. Coordinated with cross-functional teams to achieve project goals.",
+				"Intern Management: Supervising the interns, providing guidance and support to enhance their skills and performance.",
+				"Full-Stack Development: Developing and maintaining web applications and landing pages using React, Next.js, and Tailwind CSS. Implemented responsive designs for seamless user experience across devices.",
+			],
+		},
+		{
 			name: "Genuity Systems Ltd.",
 			role: "Software Engineer Intern",
 			url: "https://www.genuitysystems.com/",
@@ -27,19 +39,6 @@ const Experience = () => {
 				"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
 			],
 		},
-		// //One more test experience
-		// {
-		// 	name: "ABC Systems Ltd.",
-		// 	role: "Full-Stack Developer Intern",
-		// 	url: "https://www.genuitysystems.com/",
-		// 	start: "September 2023",
-		// 	end: "February 2024",
-		// 	description: [
-		// 		"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fugiat, molestias commodi libero nostrum quidem nobis eligendi sapiente in quia similique ducimus quod quo sunt consequatur praesentium sit sequi architecto.",
-		// 		"Software Documentation: Created comprehensive user manuals, API documentation, and technical guides. Ensured accuracy and accessibility for both technical and non-technical users.",
-		// 		"Backend Development and Integration: Developed and integrated backend services using PHP and Laravel. Implemented RESTful APIs for seamless frontend-backend communication",
-		// 	],
-		// },
 	];
 
 	return (
