@@ -13,7 +13,7 @@ const Projects = () => {
 			name: "Jawahir-Al-Riyadh Educational Company",
 			description:
 				"A landing page for Jawahir-Al-Riyadh Educational Company, showcasing their school and educational services.",
-			technologies: ["NextJS", "NextUI", "Tailwind"],
+			technologies: ["NextJS", "NextUI", "Tailwind, Framer Motion"],
 			externalLinks: {
 				live: "https://jawahir-school.netlify.app/",
 			},
@@ -53,6 +53,16 @@ const Projects = () => {
 			externalLinks: {
 				live: "https://spiffy-raindrop-bb2a07.netlify.app/",
 				github: "https://github.com/Jom-Tapau",
+			},
+		},
+		{
+			image: "/whitecode.png",
+			name: "Project Whitecode",
+			description:
+				"A landing page for a startup software firm, showcasing their innovative solutions, services, and team to attract potential clients and investors.",
+			technologies: ["NextJS", "NextUI", "Tailwind", "Framer Motion", "React Simple Maps"],
+			externalLinks: {
+				live: "https://prowhitecode.com/",
 			},
 		},
 	];
