@@ -64,7 +64,7 @@ const Hero = () => {
 			}}>
 				<Button
 					text="Check out my resume"
-					link="http://tahzeeb.netlify.app/Resume.pdf"
+					link="http://tahzeeb.netlify.app/FayruzTahzeebRahmansResume.pdf"
 				/>
 			</motion.div>
 		</div>
