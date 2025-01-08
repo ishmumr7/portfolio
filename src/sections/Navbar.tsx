@@ -142,7 +142,7 @@ const Navbar = () => {
               delay: 0.6,
             }}
           >
-            <Button text="Resume" link="http://tahzeeb.netlify.app/FayruzTahzeebRahmansResume.pdf" /> 
+            <Button text="Resume" link="http://tahzeeb.tech/FayruzTahzeebRahmansResume.pdf" /> 
           </motion.div>
         </div>
       </motion.div>
